@@ -7,7 +7,8 @@
     "offline_enabled": true,
     "permissions": [
         "tabs",
-        "storage"
+        "storage",
+        "notifications"
     ],
     "background": {
         "persistent": false,

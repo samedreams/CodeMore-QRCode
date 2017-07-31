@@ -12,8 +12,26 @@ function setBrowserAction (isBlack) {
 
 check.onchange = function () {
   if (this.checked) {
+      chrome.notifications.create(
+          'autoMission' ,
+          {
+              type    : "basic",
+              iconUrl : "icon/icon.png",
+              title   : "CodeMore 提醒您",
+              message : "已经保存",
+          }
+          );
     alert('好吧，已保存！');
   } else {
+      chrome.notifications.create(
+          'autoMission' ,
+          {
+              type    : "basic",
+              iconUrl : "icon/icon.png",
+              title   : "CodeMore 提醒您",
+              message : "已经保存😀",
+          }
+          );
     alert('已保存，(♥◠‿◠)');
   }
 

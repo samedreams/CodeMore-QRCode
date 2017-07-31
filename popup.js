@@ -101,6 +101,16 @@ chrome.tabs.query({
                 localIp = ips[0];
             });
         }
+        checkNotification();
+        chrome.notifications.create(
+            'qrcode' ,
+            {
+                type    : "basic",
+                iconUrl : "icon/icon.png",
+                title   : "CodeMore 提醒您",
+                message : "正在生成二维码😀",
+            }
+    );
 
         // rewrite url
         txt.value = text;
@@ -184,5 +194,42 @@ chrome.tabs.query({
 
         txt.value = txt.value.trim();
         txt.select();
+    }
+    function checkNotification(){
+
+        if (!("Notification" in window)) {
+
+            alert("This browser does not support desktop notification");
+
+        }
+
+// check whether notification permissions have alredy been granted
+
+        else if (Notification.permission === "granted") {
+
+// If it's okay let's create a notification
+
+            //new Notification("Granted!");
+
+        }
+
+// Otherwise, ask the user for permission
+
+        else if (Notification.permission !== 'denied') {
+
+            Notification.requestPermission(function (permission) {
+
+// If the user accepts, let's create a notification
+
+                if (permission === "granted") {
+
+                    new Notification("Request granted!");
+
+                }
+
+            });
+
+        }
+
     }
 });

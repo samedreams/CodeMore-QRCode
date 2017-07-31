@@ -7,12 +7,11 @@
 3. 输入为空时，默认生成当前页面的二维码
 4. 还是喜欢黑色？设置自己找找吧
 
-![](http://i.imgur.com/xyyZ32l.png)
+![演示图片](http://wx1.sinaimg.cn/large/005LOzcmly1fi36pel5byj30mu0he769.jpg)
 
 ----
 
 感谢：
-colorful-qrcode: [https://github.com/L3au/colorful-qrcode]
+colorful-qrcode: [https://github.com/L3au/colorful-qrcode](https://github.com/L3au/colorful-qrcode)
 QRCode:  [https://github.com/davidshimjs/qrcodejs/](https://github.com/davidshimjs/qrcodejs/)
-
 RandomColor: [https://github.com/davidmerfield/randomColor](https://github.com/davidmerfield/randomColor)
