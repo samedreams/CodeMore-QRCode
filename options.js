@@ -6,7 +6,7 @@ function setBrowserAction (isBlack) {
   });
 
   chrome.browserAction.setTitle({
-    title: isBlack ? 'Not That Colorful QRCode' : 'Colorful QRCode'
+    title: isBlack ? 'Not That CodeMore QRCode' : 'CodeMore QRCode'
   });
 }
 
